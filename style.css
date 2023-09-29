@@ -1,0 +1,196 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    background-color: black;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-color: lightsteelblue;
+}
+
+.nav {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 13vh;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding-left: 7rem;
+    padding-right: 3rem;
+}
+
+.nav h1 {
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+
+.icon ul {
+    display: flex;
+    list-style-type: none;
+    gap: 5rem;
+
+}
+
+.nav-icon {
+    font-size: 2.2rem;
+    color: white;
+}
+
+.resume {
+    font-size: 1.2rem;
+    transform: translateY(0.4rem);
+    color: white;
+}
+
+.menu {
+    display: none;
+}
+
+.main-content {
+    display: flex;
+}
+
+.div-2 {
+    width: 50%;
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.div-2 img {
+    width: 30vh;
+    transform: translateY(-2rem);
+}
+
+.div-1 {
+    height: 87vh;
+    width: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-1 h1 {
+    font-size: 5.5rem;
+    transform: translateY(-2rem);
+    color: white;
+}
+
+.div-1 p {
+    font-size: 2rem;
+    transform: translateX(-3rem);
+    color: white;
+}
+
+.div-1 span {
+    color: rgb(227, 114, 114);
+    animation-name: colour-change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternates;
+}
+
+.animation {
+    color: rgb(227, 114, 114);
+    animation-name: colour-change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternates;
+}
+
+@keyframes colour-change {
+    0% {
+        color: rgb(227, 114, 114);
+    }
+
+
+
+    50% {
+        color: rgb(232, 171, 59);
+    }
+
+
+
+    100% {
+        color: lightseagreen;
+    }
+}
+
+
+@media (max-width:600px) {
+
+    .main {
+        height: 100%;
+    }
+
+    .nav {
+        background-color: black;
+        height: 10%;
+        border: none;
+    }
+
+    .nav h1 {
+        transform: translateX(-4rem);
+    }
+
+    .icon-1 {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        font-size: 5;
+        cursor: pointer;
+    }
+
+    .main-content {
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    .div-1 {
+        width: 100%;
+        height: 50%;
+    }
+
+    .div-1 h1 {
+        font-size: 3.5rem;
+        transform: translateY(-6rem);
+        margin-left: 25px;
+    }
+
+    .div-1 p {
+        font-size: 1.2rem;
+        transform: translateX(-4rem);
+        transform: translateY(-3rem);
+        margin-right: 25px;
+    }
+
+
+    .div-2 {
+        width: 100%;
+        height: 50%;
+    }
+
+    .div-2 img {
+        width: 50%;
+    }
+}
